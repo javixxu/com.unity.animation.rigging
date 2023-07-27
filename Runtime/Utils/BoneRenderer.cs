@@ -50,13 +50,13 @@ namespace UnityEngine.Animations.Rigging
         public Transform[] transforms
         {
             get { return m_Transforms; }
-#if UNITY_EDITOR
+
             set
             {
                 m_Transforms = value;
                 ExtractBones();
             }
-#endif
+
         }
 
 #if UNITY_EDITOR
